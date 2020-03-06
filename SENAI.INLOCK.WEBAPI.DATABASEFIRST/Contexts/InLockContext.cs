@@ -15,10 +15,10 @@ namespace SENAI.INLOCK.WEBAPI.DATABASEFIRST.Domains
         {
         }
 
-        public virtual DbSet<Estudios> Estudios { get; set; }
-        public virtual DbSet<Jogos> Jogos { get; set; }
-        public virtual DbSet<TiposUsuario> TiposUsuario { get; set; }
-        public virtual DbSet<Usuarios> Usuarios { get; set; }
+        public virtual DbSet<EstudiosDomain> Estudios { get; set; }
+        public virtual DbSet<JogosDomain> Jogos { get; set; }
+        public virtual DbSet<TiposUsuarioDomain> TiposUsuario { get; set; }
+        public virtual DbSet<UsuariosDomain> Usuarios { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -31,7 +31,7 @@ namespace SENAI.INLOCK.WEBAPI.DATABASEFIRST.Domains
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Estudios>(entity =>
+            modelBuilder.Entity<EstudiosDomain>(entity =>
             {
                 entity.HasKey(e => e.IdEstudio);
 
@@ -40,7 +40,7 @@ namespace SENAI.INLOCK.WEBAPI.DATABASEFIRST.Domains
                     .IsUnicode(false);
             });
 
-            modelBuilder.Entity<Jogos>(entity =>
+            modelBuilder.Entity<JogosDomain>(entity =>
             {
                 entity.HasKey(e => e.IdJogo);
 
@@ -58,7 +58,7 @@ namespace SENAI.INLOCK.WEBAPI.DATABASEFIRST.Domains
                     .HasConstraintName("FK__Jogos__IdEstudio__3E52440B");
             });
 
-            modelBuilder.Entity<TiposUsuario>(entity =>
+            modelBuilder.Entity<TiposUsuarioDomain>(entity =>
             {
                 entity.HasKey(e => e.IdTipoUsuario);
 
@@ -67,7 +67,7 @@ namespace SENAI.INLOCK.WEBAPI.DATABASEFIRST.Domains
                     .IsUnicode(false);
             });
 
-            modelBuilder.Entity<Usuarios>(entity =>
+            modelBuilder.Entity<UsuariosDomain>(entity =>
             {
                 entity.HasKey(e => e.IdUsuario);
 

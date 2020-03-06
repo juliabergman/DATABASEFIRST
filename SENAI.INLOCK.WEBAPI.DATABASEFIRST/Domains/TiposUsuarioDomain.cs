@@ -3,16 +3,16 @@ using System.Collections.Generic;
 
 namespace SENAI.INLOCK.WEBAPI.DATABASEFIRST.Domains
 {
-    public partial class TiposUsuario
+    public partial class TiposUsuarioDomain
     {
-        public TiposUsuario()
+        public TiposUsuarioDomain()
         {
-            Usuarios = new HashSet<Usuarios>();
+            Usuarios = new HashSet<UsuariosDomain>();
         }
 
         public int IdTipoUsuario { get; set; }
         public string Titulo { get; set; }
 
-        public ICollection<Usuarios> Usuarios { get; set; }
+        public ICollection<UsuariosDomain> Usuarios { get; set; }
     }
 }

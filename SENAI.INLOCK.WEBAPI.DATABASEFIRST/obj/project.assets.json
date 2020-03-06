@@ -11803,11 +11803,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fic\\Desktop\\SENAI.INLOCK.WEBAPI.DATABASEFIRST\\SENAI.INLOCK.WEBAPI.DATABASEFIRST\\SENAI.INLOCK.WEBAPI.DATABASEFIRST.csproj",
+      "projectUniqueName": "C:\\Users\\fic\\Desktop\\DATABASEFIRST\\SENAI.INLOCK.WEBAPI.DATABASEFIRST\\SENAI.INLOCK.WEBAPI.DATABASEFIRST.csproj",
       "projectName": "SENAI.INLOCK.WEBAPI.DATABASEFIRST",
-      "projectPath": "C:\\Users\\fic\\Desktop\\SENAI.INLOCK.WEBAPI.DATABASEFIRST\\SENAI.INLOCK.WEBAPI.DATABASEFIRST\\SENAI.INLOCK.WEBAPI.DATABASEFIRST.csproj",
+      "projectPath": "C:\\Users\\fic\\Desktop\\DATABASEFIRST\\SENAI.INLOCK.WEBAPI.DATABASEFIRST\\SENAI.INLOCK.WEBAPI.DATABASEFIRST.csproj",
       "packagesPath": "C:\\Users\\fic\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fic\\Desktop\\SENAI.INLOCK.WEBAPI.DATABASEFIRST\\SENAI.INLOCK.WEBAPI.DATABASEFIRST\\obj\\",
+      "outputPath": "C:\\Users\\fic\\Desktop\\DATABASEFIRST\\SENAI.INLOCK.WEBAPI.DATABASEFIRST\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

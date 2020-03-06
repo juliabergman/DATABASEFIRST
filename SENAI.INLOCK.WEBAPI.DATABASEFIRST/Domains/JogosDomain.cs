@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace SENAI.INLOCK.WEBAPI.DATABASEFIRST.Domains
 {
-    public partial class Jogos
+    public partial class JogosDomain
     {
         public int IdJogo { get; set; }
         public string NomeJogo { get; set; }
@@ -12,6 +12,6 @@ namespace SENAI.INLOCK.WEBAPI.DATABASEFIRST.Domains
         public int? Valor { get; set; }
         public int? IdEstudio { get; set; }
 
-        public Estudios IdEstudioNavigation { get; set; }
+        public EstudiosDomain IdEstudioNavigation { get; set; }
     }
 }
