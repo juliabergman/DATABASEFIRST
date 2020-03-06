@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.960
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SENAI.INLOCK.WEBAPI.DATABASEFIRST", "SENAI.INLOCK.WEBAPI.DATABASEFIRST\SENAI.INLOCK.WEBAPI.DATABASEFIRST.csproj", "{2A6695C4-A506-4FC8-BD38-6CF81295F49D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Controller", "Controller", "{12FEF80B-8F18-407B-9DA5-9CB85FEB1455}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2A6695C4-A506-4FC8-BD38-6CF81295F49D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A6695C4-A506-4FC8-BD38-6CF81295F49D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A6695C4-A506-4FC8-BD38-6CF81295F49D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A6695C4-A506-4FC8-BD38-6CF81295F49D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0C0751C2-F891-412A-85E9-1845CB09A058}
+	EndGlobalSection
+EndGlobal
