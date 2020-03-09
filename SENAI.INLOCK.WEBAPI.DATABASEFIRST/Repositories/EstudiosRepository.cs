@@ -42,9 +42,13 @@ namespace SENAI.INLOCK.WEBAPI.DATABASEFIRST.Repositories
        // O PARAMETRO seria o acompanhamento
        //ou seja
        // parametro = pure de batata. NÃO PODE FALTAR!
+
+
+            // objeto é tipo uma varíavel?
         public void Cadastrar(EstudiosDomain estudios)
         {
              ctx.Estudios.Add(estudios);
+            ctx.SaveChanges();
 
         }
     }
