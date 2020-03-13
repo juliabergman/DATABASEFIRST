@@ -74,18 +74,17 @@ namespace SENAI.INLOCK.WEBAPI.DATABASEFIRST.Repositories
 
         }
 
-        //public void Deletar(EstudiosDomain estudioBuscado)
-        //{
-        //   //Estudios estudioBuscado = ctx.Estudios.Find(id);
+        public void Deletar(int id)
+        {
+           ctx.Estudios.Remove(Buscar(id));
+           ctx.SaveChanges();
+        }
 
-        //    ctx.Estudios.Remove(estudioBuscado);
-        //    ctx.SaveChanges();
-        //}
 
-        public void BuscarPorId(int id)
+        public EstudiosDomain Buscar(int id)
         {
             // Retorna o primeiro estúdio encontrado para o ID informado
-             ctx.Estudios.FirstOrDefault(e => e.IdEstudio == id);
+           return ctx.Estudios.FirstOrDefault(e => e.IdEstudio == id);
         }
     }
 }

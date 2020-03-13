@@ -98,18 +98,20 @@ namespace SENAI.INLOCK.WEBAPI.DATABASEFIRST.Controller
             return Ok("Estudio lindo cheiroso e atualizado!!!");
         }
 
-        //[HttpDelete("{id}")]
-        //public IActionResult Deleta(int id)
-        //{
-        //    _estudiosRepository.Deletar(id);
-        //    return StatusCode(204);
+        [HttpDelete("{id}")]
+        public IActionResult Deleta(int id)
+        {
+            _estudiosRepository.Deletar(id);
+            return Ok("DELETADO");
 
-        //}
+        }
         
-        //[HttpGet("{id}")]
-        //public IActionResult GetById ( int id)
-        //{
-        //    return _estudiosRepository.Buscar(id));
-        //}
+        [HttpGet("{id}")]
+        public IActionResult GetById (int id)
+        {
+           EstudiosDomain estudioBuscado = _estudiosRepository.Buscar(id);
+
+            return Ok(estudioBuscado);
+        }
     }
 }
