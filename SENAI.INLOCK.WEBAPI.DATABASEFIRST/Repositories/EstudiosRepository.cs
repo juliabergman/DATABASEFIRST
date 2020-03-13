@@ -50,6 +50,42 @@ namespace SENAI.INLOCK.WEBAPI.DATABASEFIRST.Repositories
              ctx.Estudios.Add(estudios);
             ctx.SaveChanges();
 
+        }   
+
+        public void Atualizar(EstudiosDomain estudiosAtualizados)
+        {
+            // nesse linha a gente tá procurando o id que a gente fez no corpo da requisição
+            //ele vai procurar no banco os dados
+            //SE ELE ACHAR, ELE VAI
+            //armazenar nesse ctx
+            // e o ctx vai se armazevar no var pacotes
+            //corpo da requisição == isso aqui no body do postman ó:
+            //{
+            //                          "idpacotes" : 1
+            //                       }
+
+            var estudios = ctx.Estudios.First(e => e.IdEstudio == estudiosAtualizados.IdEstudio);
+            estudios.NomeEstudio = estudiosAtualizados.NomeEstudio;
+
+            // agora vou passar os atributos
+
+            estudios.NomeEstudio = estudiosAtualizados.NomeEstudio;
+            ctx.SaveChanges();
+
+        }
+
+        //public void Deletar(EstudiosDomain estudioBuscado)
+        //{
+        //   //Estudios estudioBuscado = ctx.Estudios.Find(id);
+
+        //    ctx.Estudios.Remove(estudioBuscado);
+        //    ctx.SaveChanges();
+        //}
+
+        public void BuscarPorId(int id)
+        {
+            // Retorna o primeiro estúdio encontrado para o ID informado
+             ctx.Estudios.FirstOrDefault(e => e.IdEstudio == id);
         }
     }
 }

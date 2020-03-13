@@ -14,6 +14,15 @@ namespace SENAI.INLOCK.WEBAPI.DATABASEFIRST.Interfaces
         // cadastrando os EstudiosDomain, da lista EstudiosDomain dando o apelido estudios 
         void Cadastrar(EstudiosDomain estudios);
 
-        void Listar(int id, EstudiosDomain estudios);
+        EstudiosDomain Buscar(int id);
+
+     
+    
+
+        void Atualizar(EstudiosDomain estudiosAtualizado);
+    
+
+        // deletando pelo id (url do postman)
+        //void Deletar(EstudiosDomain estudioBuscado);
     }
 }
